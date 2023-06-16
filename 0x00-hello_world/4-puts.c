@@ -1,4 +1,4 @@
-# include<stdio>
+# include<stdio.h>
 /**
 *main is the entery point
 *puts will print the phrase in it
