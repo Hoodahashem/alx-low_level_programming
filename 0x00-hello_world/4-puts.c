@@ -1,11 +1,11 @@
 # include<stdio.h>
 /**
-*main is the entery point
-*puts will print the phrase in it
-*return zero if success
+*main - Entry point
+*Description: Prints some text
+*Return: Always 0 (Success)
 */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
