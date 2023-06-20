@@ -1,11 +1,12 @@
-#inclde<sdio.h>
-/*
- * main - Entery point
- * printf: prints something
- * return: 0 Allways (success)
- */
-int main()
+#inclde < stdio.h >
+/**
+ * main - Entery point: for the main function
+ *
+ * Description: Descriptive description of what the main function does
+ * Return: Always 0 (Success)
+*/
+int main(void)
 {
 	printf("_putchar/n");
-	return 0 ;
+	return (0);
 }
