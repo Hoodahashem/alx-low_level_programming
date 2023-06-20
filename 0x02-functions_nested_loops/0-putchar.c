@@ -1,4 +1,4 @@
-#inclde < stdio.h >
+#include < stdio.h >
 /**
  * main - Entery point: for the main function
  *
