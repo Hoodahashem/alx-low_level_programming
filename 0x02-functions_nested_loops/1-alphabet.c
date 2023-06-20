@@ -17,7 +17,7 @@ void print_alphabet(void)
 
 	for (x = "a"; x <= "z"; x++)
 	{
-	printf(x);
+	printf("%c",x);
 	};
 }
 int main(void)
