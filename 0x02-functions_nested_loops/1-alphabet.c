@@ -1,27 +1,20 @@
-#include<stdio.h>
-/**
- * print_alphabet - prints alphabets on the screen
- *
- * Description: this will prints something
- *
- * main - Entry point
- *
- * Description: Descriptive of what the main function does
- *
- * Return: Always 0 (Success)
- */
+#include <stdio.h>
 
+/**
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line.
+ *
+ * Return: Always 0.
+ */
 void print_alphabet(void)
 {
-	char x;
+	char alphabet;
 
-	for (x = "a"; x <= "z"; x++)
+	alphabet = 'a';
+
+	while (alphabet <= 'z')
 	{
-	printf("%c",x);
-	};
-}
-int main(void)
-{
-	print_alphabet();
-	return (0);
+		putchar(alphabet);
+		alphabet++;
+	}
+	putchar('\n');
 }
