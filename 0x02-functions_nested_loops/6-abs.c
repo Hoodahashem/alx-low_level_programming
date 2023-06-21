@@ -1,10 +1,11 @@
 #include<stdio.h>
 /**
- * _abs - computes the absolute value of an integer.
+ * _abs - computes the absolute value of an integer and return the value
  *
  * @i:the integer
  *
- * return: allways 0 (success)
+ * Return: allways 0 (success)
+ *
  */
 
 int _abs(int i)
