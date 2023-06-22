@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * mul(int a, int b) - function multiply the nums
+ * mul - function multiply the nums
  *
  * @a: an integer
  * @b: the second intger
