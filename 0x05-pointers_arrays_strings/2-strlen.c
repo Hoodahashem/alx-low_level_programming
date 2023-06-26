@@ -2,7 +2,7 @@
 
 int _strlen(char *s)
 {
-	int x = 0;
+	int x = 1;
 
 	while (*s)
 	{
