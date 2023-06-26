@@ -22,7 +22,7 @@ void print_rev(char *s)
 	for (x = i; x > 0; x--)
 	{
 		putchar(*s);
-		s--
+		s--;
 	}
 	printf("\n");
 }
