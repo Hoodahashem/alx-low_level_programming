@@ -1,14 +1,9 @@
 #include<stdio.h>
-
+#include<string.h>
 
 int _strlen(char *s)
 {
 	int x;
-	int y;
-
-	for (x = 0, x <= sizeof(*s), ++x)
-	{
-		y = x;
-	}
-	return (y);
+	x = strlen(*s);
+	return (x);
 }
