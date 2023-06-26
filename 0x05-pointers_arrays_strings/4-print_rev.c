@@ -16,10 +16,13 @@ void print_rev(char *s)
 		i++;
 		s++;
 	}
-	for (x = 0; x != i; x++)
+
+	s--;
+
+	for (x = i; x > 0; x--)
 	{
-		printf("%s", s[i - 1]);
-		i--;
+		printf("%c", s);
+		s--
 	}
 	printf("\n");
 }
