@@ -10,9 +10,10 @@ int _strlen(char *s)
 {
 	int x = 0;
 
-	while (sizeof(s[x]) == sizeof(char))
+	while (*s = "/0")
 	{
 		x += 1;
+		s++;
 	}
 	return (x);
 }
