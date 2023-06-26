@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int x = 0
 
-	while (sizeof(*s[0]) == sizeof(char))
+	while (sizeof(s[0]) == sizeof(char))
 	{
 		x += 1;
 	}
