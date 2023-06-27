@@ -8,7 +8,7 @@ void puts2(char *str)
 {
 	int i = 0;
 	int y;
-	int x = 0;
+	int x;
 
 	while (*str != '\0')
 	{
@@ -16,11 +16,10 @@ void puts2(char *str)
 		str++;
 	}
 	str--;
-
-	for (y = i; y > 0; y--)
+	x = i;
+	for (y = 0; y <= x; y++)
 	{
-		x++;
-		if (x % 2 == 0)
+		if (y % 2 == 0)
 		{
 			putchar(str[y]);
 		}
