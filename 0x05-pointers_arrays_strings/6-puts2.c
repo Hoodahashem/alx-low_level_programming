@@ -8,17 +8,18 @@ void puts2(char *str)
 {
 	int i = 0;
 	int x;
+	int y = 0;
 
 	while (*str != '\0')
 	{
 		i++;
 		str++;
 	}
-	
 	str--;
 
-	for (x = i; x > 0; x-=2)
+	for (x = i; x > 0; x -= 2)
 	{
-		putchar(str[x]);
+		putchar(str[y]);
+		y += 2;
 	}
 }
