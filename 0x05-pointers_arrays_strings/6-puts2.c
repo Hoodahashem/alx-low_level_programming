@@ -15,6 +15,7 @@ void puts2(char *str)
 		i++;
 		str++;
 	}
+	str--;
 	x = i;
 	for (y = 0; y <= x; y++)
 	{
@@ -23,4 +24,5 @@ void puts2(char *str)
 			putchar(str[y]);
 		}
 	}
+	putchar("\n")
 }
