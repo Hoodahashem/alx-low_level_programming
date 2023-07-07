@@ -7,18 +7,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int x;
-	int mul = 0;
+	int x, i;
+	int mul;
 
 	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (x = 1; x <= argc; x++)
-	{
-		mul *= atoi(argv[x]);
-	}
+	x = atoi(argv[1]);
+	i = atoi(argv[2]);
+	mul = x * i;
 	printf("%d\n", mul);
 	return (0);
 }
