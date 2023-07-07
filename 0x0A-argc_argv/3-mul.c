@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 /**
  * main - is the main entery point
  * @argc:an integer
@@ -7,8 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, i;
-	int mul;
+	int mul, i, x;
 
 	if (argc <= 2)
 	{
