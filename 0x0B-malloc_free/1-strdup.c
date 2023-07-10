@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 /**
  * _strdup - funcion to learn malloc
  * @str: the string
