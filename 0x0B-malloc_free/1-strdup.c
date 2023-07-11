@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	
 	for (x = 0; x < i; x++)
 	{
-		ptr[x] = str[x];
+		*ptr[x] = *str[x];
 	}
 	return (ptr);
 }
