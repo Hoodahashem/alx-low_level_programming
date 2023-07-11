@@ -11,6 +11,10 @@ char *_strdup(char *str)
 	char *ptr;
 	int i = 0;
 
+	if (*str == NULL)
+	{
+		return (NULL);
+	}
 	while (*str != '\0')
 	{
 		i++;
@@ -23,5 +27,6 @@ char *_strdup(char *str)
 	{
 		ptr[x] = str[x];
 	}
+	ptr[i] = '\0'
 	return (ptr);
 }
