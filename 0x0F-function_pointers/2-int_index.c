@@ -4,6 +4,7 @@
  * @size:normal integer
  * @cmp:normal pointer
  * Return:0 if success
+ * @array:normal array
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
