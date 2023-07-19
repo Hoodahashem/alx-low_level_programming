@@ -7,9 +7,5 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	void lol(char *name)
-	{
-		printf("%s",name);
-	}
-	void (*f)(char *) = lol;
+	f(name);
 }
