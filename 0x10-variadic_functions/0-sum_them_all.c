@@ -1,4 +1,7 @@
 #include "variadic_functions.h"
+#include<stdio.h>
+#include<stdarg.h>
+#include<stdlib.h>
 /**
  * sum_them_all - normal function
  * @n:the number of elements
@@ -7,13 +10,12 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int lol = unsigned int n;
 	int i;
 	int sum = 0;
 	va_list args;
 
 	va_start(args, n);
-	for (i = 0; i < lol; i++)
+	for (i = 0; i < n; i++)
 	{
 		int x = va_arg(args, int);
 
