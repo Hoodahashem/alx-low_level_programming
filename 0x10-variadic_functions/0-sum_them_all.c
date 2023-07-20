@@ -7,12 +7,13 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
+	int count = n;
 	int i;
 	int sum = 0;
 	va_list args;
 
-	va_start(args, n);
-	for (i = 0; i < n; i++)
+	va_start(args, count);
+	for (i = 0; i < count; i++)
 	{
 		int x = va_arg(args, int);
 
