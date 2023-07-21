@@ -16,10 +16,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 	for (x = 0; x < n; x++)
 	{
-		gustavo = va_arg(args, char *);
+		char *gustavo = va_arg(args, char *);
 
 		printf("%s", gustavo);
-		if (i != (n - 1) && separator != NULL)
+		if (x != (n - 1) && separator != NULL)
 		{
 			printf("%s", separator);
 		}
