@@ -19,13 +19,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		gustavo = va_arg(args, char *);
 
 		printf("%s", gustavo);
-		if (separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 		{
 			printf("%s", separator);
 		}
 		if (gustavo == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
 		}
 	}
 	printf("\n");
