@@ -3,14 +3,6 @@
 #include<stdlib.h>
 #include "variadic_functions.h"
 /**
- * print_numbers - normal function
- * @separator:normal separator
- * @n:normal integer
- * Return:nothing
- */
-#include "variadic_functions.h"
-
-/**
 *print_numbers - prints numbers followed by
 *new line
 *@separator: string to be printed between numbers
