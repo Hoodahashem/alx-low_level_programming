@@ -2,7 +2,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "variadic_functions.h"
-
+/**
+ * print_numbers - normal function
+ * @separator:normal separator
+ * @n:normal integer
+ * Return:nothing
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int x;
@@ -13,11 +18,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (separator != NULL)
 		{
-			int lol = va_arg(args,int);
+			int lol = va_arg(args, int);
+
 			printf("%d%c", lol, separator);
 		}
 		else
 		{
+			int lol = va_arg(args, int);
+
 			printf("%d", lol);
 		}
 	}
