@@ -1,5 +1,5 @@
-#ifndef gustavo
-#define gustavo
+#ifndef LISTS_H
+#define lISTS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +11,7 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for Holberton project
+ * for GUSTAVO project
  */
 typedef struct listint_t
 {
