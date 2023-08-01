@@ -6,14 +6,16 @@
  * Return: The linked.
  */
 
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
-	size_t i = 0;
+    size_t num = 0;
 
-	while (h != NULL)
-	{
-		h = h->next;
-		i++;
-	}
-	return (i);
+    while (h)
+    {
+        printf("%d\n", h->n);
+        num++;
+        h = h->next;
+    }
+
+    return (num);
 }
