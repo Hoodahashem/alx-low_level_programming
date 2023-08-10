@@ -42,7 +42,6 @@ void close_file(int fd)
 		exit(100);
 	}
 }
-
 /**
  * main - main entery point
  * @argc: duuh
@@ -87,7 +86,7 @@ int main(int argc, char *argv[])
 		read = read(copy_from, buffer, 1024);
 		copy_to = open(argv[2], O_WRONLY | O_APPEND);
 
-	} while (r > 0);
+	} while (read > 0);
 
 	free(buffer);
 	close_file(copy_from);
