@@ -55,8 +55,7 @@ int main(int argc, char *argv[])
 	copy_from = open(argv[1], O_RDONLY);
 	read = read(copy_from, buffer, 1024);
 	copy_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while (read > 0)
-	{
+	do{
 		if (copy_from == -1 || read == -1)
 		{
 			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
@@ -70,7 +69,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		read = read(copy_from, buffer, 1024);
 		copy_to = open(argv[2], O_WRONLY | O_APPEND);
-	}
+	}while(read >0);
 	free(buffer);
 	close_func(copy_to);
 	close_func(copy_from);
