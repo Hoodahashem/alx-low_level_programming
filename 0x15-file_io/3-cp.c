@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "main.h"
+void close_func(int fd);
+char buffer_func(char *filename);
+
 /**
  * close_func - close function
  * @fd:the file i wanna close
