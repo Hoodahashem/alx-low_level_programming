@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 
 
 	do {
-		if (from == -1 || r == -1)
+		if (copy_from == -1 || read == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
