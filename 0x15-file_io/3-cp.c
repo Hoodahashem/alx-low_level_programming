@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include "main.h"
 void close_func(int fd);
-char buffer_func(char *filename);
+char *buffer_func(char *filename);
 
 /**
  * close_func - close function
