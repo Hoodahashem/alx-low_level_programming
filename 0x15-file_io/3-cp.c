@@ -6,7 +6,7 @@ char *gustavofunc(char *file);
 void close_file(int fd);
 
 /**
- * create_buffer - normal function
+ * gustavofunc - normal function
  * @file: The name of the file
  * Return:gustavo
  */
