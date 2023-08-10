@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		write = write(copy_to, buffer, r);
+		write = write(copy_to, buffer, read);
 		if (copy_to == -1 || write == -1)
 		{
 			dprintf(STDERR_FILENO,
