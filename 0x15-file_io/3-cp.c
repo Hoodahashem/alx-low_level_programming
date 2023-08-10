@@ -27,7 +27,7 @@ char buffer_func(char *filename)
 {
 	char *buff;
 
-	buff == malloc(sizeof(char) * 1024);
+	buff = malloc(sizeof(char) * 1024);
 	if (buff == NULL)
 	{
 		dprintf(2, "Error: Can't write to %s\n", filename);
