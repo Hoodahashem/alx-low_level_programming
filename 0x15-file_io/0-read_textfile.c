@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bluff = malloc(sizeof(char) * letters);
 
 	lol1 = read(ptr, bluff, letters);
-	lol2 = write(STDOUT_FILENO, bluff, letters);
+	lol2 = write(1, bluff, lol1);
 
 	free(bluff);
 	close(ptr);
