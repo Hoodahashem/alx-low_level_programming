@@ -10,10 +10,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t ptr, lol1, lol2;
 	char *bluff;
 
-	if (filename == NULL)
-	{
-		return (0);
-	}
 	ptr = open(filename, O_RDONLY);
 
 	if (ptr == -1)
