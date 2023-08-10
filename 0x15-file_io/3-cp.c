@@ -26,7 +26,7 @@ void close_func(int fd)
  * @filename:duuh
  * Return:buffer
  */
-char buffer_func(char *filename)
+char *buffer_func(char *filename)
 {
 	char *buff;
 
