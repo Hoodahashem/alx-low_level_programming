@@ -4,6 +4,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int l = 0;
 	unsigned int re = 0;
+	int pow;
 
 	if (b == NULL)
 	{
@@ -12,21 +13,17 @@ unsigned int binary_to_uint(const char *b)
 	while (b[l] != NULL)
 	{
 		l++;
-	}
-	int pow = l - 1;
-
-	for (int i = l - 1; i >= 0; i--)
 	{
-		if (b[i] != '0' && b[i] != '1')
+	for (l--, pow = 1; l >= 0; l--, pow *= 2)
+	{
+		if (b[l] != '0' && b[l] != '1')
 		{
 			return (0);
 		}
-		if (b[i] == '1')
+		if (b[l] & 1)
 		{
-			re += 1 << pow;
+			re += pow;
 		}
-
-		pow--;
 	}
 	return (re);
 }
