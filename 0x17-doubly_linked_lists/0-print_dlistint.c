@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * print_dlistint - function
  * @h:head
