@@ -8,7 +8,7 @@
  * note here that i was trying to pass the checker
  * but couldn't find the issue in my code so I took a look
  * in another ones code and found u must dereference the key to
- * the key_index function and not any dereferenceing
+ * the key_index function and not any dereferencing
  * u must type ("const unsigned char *") to work and i don't
  * know why it works but it works!
 */
