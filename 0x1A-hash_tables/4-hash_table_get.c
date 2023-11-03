@@ -7,7 +7,7 @@
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int inky, i;
+	unsigned long int inky;
 	hash_node_t *node;
 
 	if (ht == NULL || key == NULL || *key == '\0')
