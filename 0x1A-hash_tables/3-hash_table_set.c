@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-	inky = key_index((const unsigned char *)key, ht->size);
+	inky = key_index(*key, ht->size);
 	for (i = inky; ht->array[i] != NULL; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
