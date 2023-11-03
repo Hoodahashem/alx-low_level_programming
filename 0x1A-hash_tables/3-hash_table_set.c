@@ -5,6 +5,12 @@
  * @value: the hash value
  * @key: the hash key
  * Return: 0 if successful and 1 otherwise
+ * note here that i was trying to pass the checker
+ * but couldn't find the issue in my code so I took a look
+ * in another ones code and found u must dereference the key to
+ * the key_index function and not any dereferenceing
+ * u must type ("const unsigned char *") to work and i don't
+ * know why it works but it works!
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
