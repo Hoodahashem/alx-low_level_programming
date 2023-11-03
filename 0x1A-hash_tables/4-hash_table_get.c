@@ -4,6 +4,9 @@
  * @key: The key
  * @ht: The hash table
  * Return: The value
+ * i was facing the fault in a check in the checker
+ * the solution for it was to create a node and traverse
+ * throught the nodes instead of travers in the array
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
