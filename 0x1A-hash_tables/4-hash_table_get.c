@@ -8,6 +8,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int inky, i;
+	hash_node_t *node;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 	{
@@ -22,11 +23,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		return (NULL);
 	}
-	for (i = inky; ht->array[i] != NULL; i++)
+	for (node = ht->array[inky]; node != NULL; node = node->next)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)
+		if (strcmp(node->key, key) == 0)
 		{
-			return (strdup(ht->array[i]->value));
+			return (strdup(node->value));
 		}
 	}
 	return (NULL);
