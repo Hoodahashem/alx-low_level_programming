@@ -11,12 +11,16 @@ int linear_search(int *array, size_t size, int value)
 {
 	size_t x = 0;
 
+	if (array == NULL)
+	{
+		return (-1);
+	}
 	for (; x < size; x++)
 	{
 		if (array[x] == value)
 		{
-			break;
+			return ((int)x);
 		}
 	}
-	return ((int)x);
+	return (-1);
 }
